@@ -1,6 +1,10 @@
-1.position:absolute;
+1.定位：
+  position:absolute 相对于父元素定位;
+    fixed:绝对定位元素，相对于浏览器定位；
+    relative:相对定位元素，相对该元素原本的位置定位。
   left:10px || -10px;
-  top:20px || -20px;
+  top:20px || -20px;（即可为负数）
+  通过left、right、top、button调整
   样式可通过firedug获取
 
 
