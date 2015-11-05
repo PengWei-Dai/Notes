@@ -1,0 +1,11 @@
+1.在Eclipse中多个工程配置依赖之后，需要在主工程的Deployment Assembly中添加依赖的项目。
+
+2.struts:  <action name="S_*_*_*" class="com.harmonywisdom.illustrate.{1}.action.{2}Action" method="{3}"/>
+	eg:url:'/illustrate/action/S_login_Logon_logon.action'
+
+3.获取ip地址： String ip = request.getRemoteAddr();
+
+4.maven: 
+	在eclipse中配置.m2的setting文件位置，然后在setting文件中需要指明远程仓库位置和本地仓库位置。
+	常用命令:	mvn clean 清理（删除target目录下编译内容）
+				mvn compile 编译项目
