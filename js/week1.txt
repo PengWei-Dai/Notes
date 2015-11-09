@@ -1,0 +1,51 @@
+1.jquery获取元素
+  *text()-设置或返回所选元素的文本内容
+  *html()-设置或返回所选元素的内容（包括html标记）
+  *val()-设置或返回表单字段的指
+
+2.jquery设置单个元素css属性
+   *$(.yuansu).css("display","none");  //不显示该元素
+   *$(.yuansu).css({"color":"red","background":"bule"})  //同时设置多个元素
+
+3.jquery遍历元素
+   *foreach for(i in arrays){}  i拿到的是数组的下标
+   *$("li").each(function(){
+      ${this}
+   )}
+   此时this拿到是这个元素的选择器，通过${this}便可以对该元素进行操作。
+
+4.js 更多信息
+    1.获取当前刷新的次数，作为参数请求后台数据库
+    2.将获取到的新数据，添加到当前页尾。
+    
+  js 自动滚动刷新信息
+    1.判断下拉滚动条位置，判断是否需要刷新
+    2.重复更多消息按钮的方法。
+  
+  实现根据滚动条位置判断是否执行操作：
+    *窗口滚动条
+	监听方法：window.onscroll = function(){}
+	获取高度：var top = document.documentElement.scrollTop || document.body.scrollTop;
+    *div滚动条
+	原理：使用jquery的scroll()方法：当用户滚动指定的元素时，就会触发scroll事件
+	监听方法：$("div").scroll(function(){});
+	获取高度：var top = $("div").scrollTop();
+
+5.jquery ajax异步请求
+    *常规带json数据的异步请求
+    var aj = $.ajax({
+	url:'userAction_update',
+	data:{
+	    name : zhangsan,
+	    age : 23,
+	    password : 123
+	    }
+	type:'post',
+	cache:false,
+	datatype:'json',
+	success:function(data){
+	    if(data.msg == "true"){
+		alert('update success');
+	    }
+	}
+    });

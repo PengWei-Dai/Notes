@@ -5,6 +5,4 @@
   left:10px || -10px;
   top:20px || -20px;（即可为负数）
   通过left、right、top、button调整
-  样式可通过firedug获取
-
-
+  样式可通过firbug查看调整
