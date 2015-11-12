@@ -7,7 +7,8 @@
 2.js动态绑定事件
     $(selector).on(event,childSelector,data,function,map) 
     推荐使用on方法：$("#select").on("click",function(){});
-    未创建的元素(生成的元素可以这样写)：$("select").on("click","element",function(){}); \
+    未创建的元素(生成的元素可以这样写)：$("select").on("click","element",function(){});
+    ps:上一句的语法原理是事件冒泡，委托的形式，eg：$("document").on("click","p",function(){}); 将click事件委托给document来处理，但是当事件冒泡到”p“元素事，终止事件的发生。
 
 3.合成事件
     hover(function(){},function(){}) 第一个function指光标移动到元素上，第二个function指光标离开元素
