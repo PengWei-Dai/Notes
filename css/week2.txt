@@ -3,3 +3,6 @@
     *hidden ：内容会被修剪，其余元素不可见
     *scroll：内容会被修剪，但是会显示滚动条查看其余内容
     *auto：如果内容被修剪，会显示滚动条
+
+2.bootstrap中的模态框大小调整
+    *.modal-dialog 后添加 modal-lg||modal-sm 默认宽度是900||600,可以在bootstrap.css中修改宽度。也可以自定义一个覆盖

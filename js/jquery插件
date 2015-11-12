@@ -1,0 +1,8 @@
+1.分页插件：pagination():为ajax分页插件，一次性加载，故分页切换时无刷新与延迟
+    使用方法：$("#page").pagination(100{
+    intem_per_page:10
+    ....})
+    
+2.自定义滚动条样式插件：mCustomScrollbar
+
+3.拖动上传插件：dropzone

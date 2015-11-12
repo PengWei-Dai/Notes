@@ -1,0 +1,4 @@
+1.$(window).resize(function(){});  当浏览器调整大小时触发该函数
+2.event.keyCode IE浏览器支持的敲击键盘生成的ASCII码  回车键=13
+3.js网页跳转：window.location.href="url"  =>当前窗口跳转
+4.js中map对象的实现，可以参考map.js

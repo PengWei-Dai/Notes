@@ -4,3 +4,14 @@
 	由于元素是动态绑定的，所以绑定事件的写法：$(document).on("click","#select",function(){
 	});
 
+2.js动态绑定事件
+    $(selector).on(event,childSelector,data,function,map) 
+    推荐使用on方法：$("#select").on("click",function(){});
+    未创建的元素(生成的元素可以这样写)：$("select").on("click","element",function(){}); \
+
+3.合成事件
+    hover(function(){},function(){}) 第一个function指光标移动到元素上，第二个function指光标离开元素
+    toggle(fn1,fn2,fn3...) 指第一次单击事件fn1,第二次单击事件fn2...
+
+4.模拟操作
+    $("element").trigger(event,[data])
